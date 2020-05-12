@@ -4,26 +4,31 @@ export interface IProps {
   onSetAge: (date: number) => void;
 }
 
-const months = [{name: "January", monthNum: 0},
-                {name: "February", monthNum: 1},
-                {name: "March", monthNum: 2},
-                {name: "April", monthNum: 3},
-                {name: "May", monthNum: 4},
-                {name: "June", monthNum: 5},
-                {name: "July", monthNum: 6},
-                {name: "August", monthNum: 7},
-                {name: "September", monthNum: 8},
-                {name: "October", monthNum: 9},
-                {name: "November", monthNum: 10},
-                {name: "December", monthNum: 11}];
+const months = [{name: "January", monthNum: 0, maxDays: 31},
+                {name: "February", monthNum: 1, maxDays: 29},
+                {name: "March", monthNum: 2, maxDays: 31},
+                {name: "April", monthNum: 3, maxDays: 30},
+                {name: "May", monthNum: 4, maxDays: 31},
+                {name: "June", monthNum: 5, maxDays: 30},
+                {name: "July", monthNum: 6, maxDays: 31},
+                {name: "August", monthNum: 7, maxDays: 31},
+                {name: "September", monthNum: 8, maxDays: 30},
+                {name: "October", monthNum: 9, maxDays: 31},
+                {name: "November", monthNum: 10, maxDays: 30},
+                {name: "December", monthNum: 11, maxDays: 31}];
 
 export const Birthdate: React.FC<IProps> = (props) => {
   const [year, setYear] = useState(2010);
-  const [month, setMonth] = useState(0);
+  const [month, setMonth] = useState("0");
   const [day, setDay] = useState(1);
 
+  let maxDay = 31;
+  const currMonth = months.find(m => m.monthNum === parseInt(month));
+  if (currMonth) {
+    maxDay = currMonth.maxDays;
+  }
   const days = [];
-  for (let d = 1; d <= 31; d++) {
+  for (let d = 1; d <= maxDay; d++) {
     days.push(d);
   }
   const years = [];
@@ -31,11 +36,17 @@ export const Birthdate: React.FC<IProps> = (props) => {
     years.push(y);
   }
   useEffect(() => {
-    const dUser = new Date(year, month, day);
+    const dUser = new Date(year, parseInt(month), day);
     const dNow = new Date(Date.now());
     const difference = dateDiffInDays(dUser, dNow);
-    props.onSetAge(difference)
+    props.onSetAge(difference);
   });
+  useEffect(() => {
+    const currMonth = months.find(m => m.monthNum === parseInt(month));
+    if (currMonth && day > currMonth.maxDays) {
+      setDay(currMonth.maxDays);
+    }
+  },[month, day]);
 
   const handleChangeMonth = (event: any) => {
     setMonth(event.target.value);

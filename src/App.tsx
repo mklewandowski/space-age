@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Header } from "./Header";
 import { Intro } from "./Intro";
 import { Birthdate } from "./Birthdate";
 import { Planets } from "./Planets";
@@ -18,14 +19,7 @@ function App() {
 
   return (
     <div className="app">
-      <div className="app-header">
-        <div className="apptitle">
-          Space Age
-        </div>
-        <div className="subtitle">
-          a planetary age calculator
-        </div>
-      </div>
+      <Header/>
       <Intro/>
       <div className="chooser">
         <Birthdate onSetAge={handleSetAge} />
