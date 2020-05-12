@@ -1,15 +1,18 @@
 import React from "react";
 import orbit from "./orbit.gif";
 
-const kIntroText = "On planet Earth, we celebrate our birthday once a year. Did you know a year is how long it takes a planet " +
-                   "to orbit around the Sun? An Earth year is 365 days long because it takes 365 days for the Earth to orbit the Sun. " +
-                   "However, other planets orbit the Sun faster or slower than Earth. A year is actually longer or shorter on other " +
-                   "planets! That means you would have a different age if you lived on another planet!";
+const kIntroText = "WHAT IS A YEAR? A year is how long it takes a planet to go around the Sun - " +
+  "we call this an ORBIT. On Earth, where we live, it takes 365 days to orbit the Sun. " +
+  "Some planets orbit the Sun much faster than Earth. Other planets orbit the Sun much slower. " +
+  "This means on some planets a year is very short while on other planets a year is very long. " +
+  "How old would you be if you lived on another planet? If the planet orbits the Sun quickly and has short years, " +
+  "you will have had more birthdays and be older! If the planet orbits the Sun slowly and has long years, " +
+  "you will have had fewer birthdays and be younger! Enter your birthday and pick a planet to see how old you would be if grew up on another planet!";
 
 export const Intro: React.FC = () => {
   return (
     <div className="introduction">
-      <img height={210} src={orbit} alt={"orbit"}/>
+      <img height={200} src={orbit} alt={"orbit"}/>
       <div className="content">
         {kIntroText}
       </div>
