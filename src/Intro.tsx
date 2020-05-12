@@ -1,5 +1,6 @@
 import React from "react";
 import orbit from "./orbit.gif";
+import "./Intro.css";
 
 const kIntroText = "WHAT IS A YEAR? A year is how long it takes a planet to go around the Sun - " +
   "we call this an ORBIT. On Earth, where we live, it takes 365 days to orbit the Sun. " +

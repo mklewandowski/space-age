@@ -1,0 +1,28 @@
+.birthdate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 0px 10px 0px 0px;
+  border: solid #FF539E 5px;
+  border-radius: 15px;
+  color: white;
+  background-color: #1B1F28;
+  font-size: 26px;
+}
+
+.birthdate .title {
+  margin: 5px 0px 10px 0px;
+}
+
+select {
+  height: 36px;
+  padding: 4px;
+  margin: 5px;
+  font-size: 18px;
+}
+
+label {
+  margin: 5px;
+  font-size: 18px;
+}

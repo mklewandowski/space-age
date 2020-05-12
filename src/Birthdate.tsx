@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "./Birthdate.css";
 
 export interface IProps {
   onSetAge: (date: number) => void;

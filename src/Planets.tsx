@@ -7,6 +7,7 @@ import saturn from "./saturn.png";
 import uranus from "./uranus.png";
 import neptune from "./neptune.png";
 import pluto from "./pluto.png";
+import "./Planets.css";
 
 const planets = [{name: "Mercury", image: mercury},
                  {name: "Venus", image: venus},

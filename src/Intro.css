@@ -1,0 +1,15 @@
+.introduction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 16px;
+  color: black;
+  background-color: #FFB1D3;
+  border: solid #FF539E 5px;
+  border-radius: 15px;
+  font-size: 1.25em;
+}
