@@ -1,0 +1,20 @@
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  border: solid #E483FF 5px;
+  background-color: #DA59FF;
+  color: white;
+}
+.apptitle {
+  line-height: 40px;
+  font-family: 'Space Mono', monospace;
+  font-size: 40px;
+}
+.subtitle {
+  margin: 5px;
+  font-size: 20px;
+}

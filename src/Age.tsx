@@ -8,6 +8,7 @@ import astro6 from "./astro6.gif";
 import astro7 from "./astro7.gif";
 import astro8 from "./astro8.gif";
 import astro9 from "./astro9.gif";
+import "./Age.css";
 
 export interface IProps {
   planet?: string;
@@ -59,7 +60,7 @@ export const Age: React.FC<IProps> = (props) => {
             <div className="title">{props.planet}</div>
             <div>{message}</div>
           </div>
-        : <div className="content">Enter a birthdate and choose a planet to see your planetary age...</div>
+        : <div className="content">Enter a birthday and choose a planet to see your planetary age...</div>
         }
       </div>
     </div>

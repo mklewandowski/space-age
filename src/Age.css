@@ -1,0 +1,24 @@
+.age {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding: 16px;
+  margin: auto;
+  margin-top: 10px;
+  color: black;
+  background-color: #FFB1D3;
+  border: solid #FF539E 5px;
+  border-radius: 15px;
+  font-size: 1.25em;
+}
+.age .strip {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.age .title {
+  font-size: 1.5em;
+}
