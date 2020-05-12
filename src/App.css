@@ -1,12 +1,14 @@
+html, body{
+  min-height: 100vh;
+  overflow: auto;
+}
+
 #root {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  background-color: black;
+  background-image: url("stars.jpg");
 }
 
 .app {
@@ -15,49 +17,52 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  background-color: black;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .app-header {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  align-items: baseline;
   justify-content: center;
-  height: 60px;
   background-color: #DA59FF;
   color: white;
+  margin-top: 10px;
+  border: solid #E483FF 5px;
+  width: 100%;
+}
+.apptitle {
   font-size: 40px;
   font-family: 'Space Mono', monospace;
-  margin-top: 10px;
-  border: solid #E483FF 8px;
-  width: 100%;
+  margin-left: 220px;
+  margin-right: 10px;
+}
+.subtitle {
+  font-size: 20px;
 }
 
 .introduction {
   display: flex;
   box-sizing: border-box;
-  width: 1200px;
-  height: 260px;
+  max-width: 1200px;
   margin: 10px;
   padding: 16px;
   color: black;
   background-color: #FFB1D3;
-  border: solid #FF539E 8px;
-  border-radius: 18px;
-  font-size: 20px;
+  border: solid #FF539E 5px;
+  border-radius: 15px;
+  font-size: 1.25em;
 }
 
 .content {
   margin: 0 10px 0 10px;
-  font-size: 20px;
 }
 
 .chooser {
   display: flex;
   box-sizing: border-box;
-  width: 1200px;
-  height: 260px;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0px 10px 0px 10px;
 }
 
 .birthdate {
@@ -65,9 +70,9 @@
   flex-direction: column;
   align-items: center;
   width: 300px;
-  margin: 0px 5px 10px 0px;
-  border: solid #CE2DFC 8px;
-  border-radius: 18px;
+  margin: 0px 10px 10px 0px;
+  border: solid #CE2DFC 5px;
+  border-radius: 15px;
   color: white;
   background-color: #1B1F28;
   font-size: 26px;
@@ -91,14 +96,18 @@ label {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 860px;
+  width: 870px;
   font-size: 26px;
   color: white;
   background-color: #1B1F28;
-  margin: 0px 0px 10px 5px;
-  border: solid #CE2DFC 8px;
-  border-radius: 18px;
+  margin: 0px 0px 10px 0px;
+  border: solid #CE2DFC 5px;
+  border-radius: 15px;
 }
+.planets .title {
+  margin: 5px 0px 0px 0px;
+}
+
 .strip {
   font-size: 18px;
   display: flex;
@@ -109,22 +118,29 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5px;
+  padding: 4px;
+  margin: 2px;
   cursor: pointer;
+  border: solid #1B1F28 2px;
+  border-radius: 8px;
 }
-
+.planet:hover {
+  border: solid #E483FF 2px;
+  border-radius: 8px;
+}
 .age {
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
-  width: 1200px;
-  height: 250px;
+  max-width: 1200px;
+  min-height: 250px;
   padding: 16px;
   color: black;
   background-color: #FFBDB1;
-  border: solid #FF4826 8px;
-  border-radius: 18px;
+  border: solid #FF4826 5px;
+  border-radius: 15px;
   font-size: 20px;
+  margin: 0 10px 20px 10px;
 }
 .age .strip {
   flex-direction: row;
@@ -135,14 +151,3 @@ label {
   font-size: 30px;
 }
 
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
