@@ -1,30 +1,34 @@
 {
   "files": {
-    "main.css": "/space-age/static/css/main.d7f8a741.chunk.css",
-    "main.js": "/space-age/static/js/main.bb9e14e5.chunk.js",
-    "main.js.map": "/space-age/static/js/main.bb9e14e5.chunk.js.map",
+    "main.css": "/space-age/static/css/main.56d65950.chunk.css",
+    "main.js": "/space-age/static/js/main.37fb1f01.chunk.js",
+    "main.js.map": "/space-age/static/js/main.37fb1f01.chunk.js.map",
     "runtime-main.js": "/space-age/static/js/runtime-main.e0e9d860.js",
     "runtime-main.js.map": "/space-age/static/js/runtime-main.e0e9d860.js.map",
-    "static/js/2.61ac1a69.chunk.js": "/space-age/static/js/2.61ac1a69.chunk.js",
-    "static/js/2.61ac1a69.chunk.js.map": "/space-age/static/js/2.61ac1a69.chunk.js.map",
+    "static/js/2.e10405ef.chunk.js": "/space-age/static/js/2.e10405ef.chunk.js",
+    "static/js/2.e10405ef.chunk.js.map": "/space-age/static/js/2.e10405ef.chunk.js.map",
     "index.html": "/space-age/index.html",
-    "precache-manifest.cb95254951a8d0f2db757d2c3dcb3789.js": "/space-age/precache-manifest.cb95254951a8d0f2db757d2c3dcb3789.js",
+    "precache-manifest.8c8f111690084c7faafc8e4211f36d6c.js": "/space-age/precache-manifest.8c8f111690084c7faafc8e4211f36d6c.js",
     "service-worker.js": "/space-age/service-worker.js",
-    "static/css/main.d7f8a741.chunk.css.map": "/space-age/static/css/main.d7f8a741.chunk.css.map",
-    "static/js/2.61ac1a69.chunk.js.LICENSE.txt": "/space-age/static/js/2.61ac1a69.chunk.js.LICENSE.txt",
-    "static/media/astro1.gif": "/space-age/static/media/astro1.3bbaf87d.gif",
-    "static/media/astro2.gif": "/space-age/static/media/astro2.b2ddc30e.gif",
+    "static/css/main.56d65950.chunk.css.map": "/space-age/static/css/main.56d65950.chunk.css.map",
+    "static/js/2.e10405ef.chunk.js.LICENSE.txt": "/space-age/static/js/2.e10405ef.chunk.js.LICENSE.txt",
+    "static/media/astro1.gif": "/space-age/static/media/astro1.50caddbe.gif",
+    "static/media/astro2.gif": "/space-age/static/media/astro2.7c71dbe8.gif",
     "static/media/astro3.gif": "/space-age/static/media/astro3.ca195d11.gif",
-    "static/media/astro4.gif": "/space-age/static/media/astro4.7c71dbe8.gif",
+    "static/media/astro4.gif": "/space-age/static/media/astro4.b2ddc30e.gif",
     "static/media/astro5.gif": "/space-age/static/media/astro5.218fabb1.gif",
-    "static/media/jupiter.png": "/space-age/static/media/jupiter.f2f72d92.png",
-    "static/media/orbit.gif": "/space-age/static/media/orbit.76f9ca5b.gif",
-    "static/media/saturn.png": "/space-age/static/media/saturn.ed0de95d.png"
+    "static/media/astro6.gif": "/space-age/static/media/astro6.3bbaf87d.gif",
+    "static/media/astro7.gif": "/space-age/static/media/astro7.3be1e52e.gif",
+    "static/media/astro8.gif": "/space-age/static/media/astro8.9009c331.gif",
+    "static/media/jupiter.png": "/space-age/static/media/jupiter.87a9e610.png",
+    "static/media/orbit.gif": "/space-age/static/media/orbit.0a6ef343.gif",
+    "static/media/saturn.png": "/space-age/static/media/saturn.d31011f0.png",
+    "static/media/App.css": "/space-age/static/media/stars.02fa54c2.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.e0e9d860.js",
-    "static/js/2.61ac1a69.chunk.js",
-    "static/css/main.d7f8a741.chunk.css",
-    "static/js/main.bb9e14e5.chunk.js"
+    "static/js/2.e10405ef.chunk.js",
+    "static/css/main.56d65950.chunk.css",
+    "static/js/main.37fb1f01.chunk.js"
   ]
 }
