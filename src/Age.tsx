@@ -7,7 +7,6 @@ import astro5 from "./astro5.gif";
 import astro6 from "./astro6.gif";
 import astro7 from "./astro7.gif";
 import astro8 from "./astro8.gif";
-import astro9 from "./astro9.gif";
 
 export interface IProps {
   planet?: string;
@@ -39,9 +38,9 @@ export const Age: React.FC<IProps> = (props) => {
   }
   const planetYearString = `However, on ${props.planet} a year is ${planetYear} Earth days long!`;
   const yearsOldString = (planetAge < 1)
-                          ? "not even 1 year old"
-                          : `${planetAge} year${(planetAge === 1) ? "" : "s"} old`
-  const planetAgeString = `That means you are ${yearsOldString} on ${props.planet}.`;
+                          ? "not even be 1 year old"
+                          : `be ${planetAge} year${(planetAge === 1) ? "" : "s"} old`
+  const planetAgeString = `That means you would ${yearsOldString} on ${props.planet}!!`;
   return (
     <div className="age">
       { props.planet
