@@ -1,17 +1,140 @@
-.App {
-  text-align: center;
+#root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background-color: #DA59FF;
+  color: white;
+  font-size: 40px;
+  font-family: 'Space Mono', monospace;
+  margin-top: 10px;
+  border: solid #E483FF 8px;
+  width: 100%;
 }
+
+.introduction {
+  display: flex;
+  box-sizing: border-box;
+  width: 1200px;
+  height: 260px;
+  margin: 10px;
+  padding: 16px;
+  color: black;
+  background-color: #FFB1D3;
+  border: solid #FF539E 8px;
+  border-radius: 18px;
+  font-size: 20px;
+}
+
+.content {
+  margin: 0 10px 0 10px;
+  font-size: 20px;
+}
+
+.chooser {
+  display: flex;
+  box-sizing: border-box;
+  width: 1200px;
+  height: 260px;
+}
+
+.birthdate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 0px 5px 10px 0px;
+  border: solid #CE2DFC 8px;
+  border-radius: 18px;
+  color: white;
+  background-color: #1B1F28;
+  font-size: 26px;
+}
+.birthdate .title {
+  margin: 5px 0px 10px 0px;
+}
+select {
+  font-size: 18px;
+  height: 36px;
+  padding: 4px;
+  margin: 5px
+}
+label {
+  margin: 5px;
+  font-size: 18px;
+}
+
+.planets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 860px;
+  font-size: 26px;
+  color: white;
+  background-color: #1B1F28;
+  margin: 0px 0px 10px 5px;
+  border: solid #CE2DFC 8px;
+  border-radius: 18px;
+}
+.strip {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.planet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.age {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  width: 1200px;
+  height: 250px;
+  padding: 16px;
+  color: black;
+  background-color: #FFBDB1;
+  border: solid #FF4826 8px;
+  border-radius: 18px;
+  font-size: 20px;
+}
+.age .strip {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.age .title {
+  font-size: 30px;
+}
+
 
 .App-header {
   background-color: #282c34;
@@ -22,17 +145,4 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

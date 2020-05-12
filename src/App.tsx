@@ -1,24 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { Intro } from "./Intro";
+import { Birthdate } from "./Birthdate";
+import { Planets } from "./Planets";
+import { Age } from "./Age";
+import "./App.css";
 
 function App() {
+  const [currentAge, setCurrentAge] = useState(0);
+  const [currentPlanet, setCurrentPlanet] = useState("");
+
+  const handleChoosePlanet = (planet: string) => {
+    setCurrentPlanet(planet);
+  };
+  const handleSetAge = (age: number) => {
+    setCurrentAge(age);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="app-header">
+        Space Age
+      </div>
+      <Intro/>
+      <div className="chooser">
+        <Birthdate onSetAge={handleSetAge} />
+        <Planets onChoosePlanet={handleChoosePlanet} />
+      </div>
+      <Age
+        planet={currentPlanet}
+        age={currentAge}
+      />
     </div>
   );
 }
