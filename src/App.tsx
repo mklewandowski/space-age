@@ -19,7 +19,12 @@ function App() {
   return (
     <div className="app">
       <div className="app-header">
-        Space Age
+        <div className="apptitle">
+          Space Age
+        </div>
+        <div className="subtitle">
+          a planetary age calculator
+        </div>
       </div>
       <Intro/>
       <div className="chooser">
