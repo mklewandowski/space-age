@@ -18,15 +18,15 @@ export interface IProps {
 const planets = [{name: "Mercury", yearLength: 88, astroImage: astro1, text1: "However, Mercury orbits the Sun much faster than Earth does!", text2: "A year on Mercury is only about 3 months on Earth."},
                  {name: "Venus", yearLength: 225, astroImage: astro2, text1: "However, Venus orbits the Sun faster than Earth does!", text2: "A year on Venus is only about 8 months on Earth."},
                  {name: "Mars", yearLength: 687, astroImage: astro3, text1: "However, it takes Mars about twice as long to orbit the Sun!", text2: "You need to wait almost 2 Earth years for 1 Martian year to go by!"},
-                 {name: "Jupiter", yearLength: (365 * 12), astroImage: astro4, text1: "However, Jupiter orbits the Sun much slower than Earth does!", text2: "A single year on Jupiter lasts about 12 Earth years!"},
-                 {name: "Saturn", yearLength: (365 * 29.5), astroImage: astro5, text1: "However, Saturn orbits the Sun much slower than Earth does!", text2: "A single year on Saturn lasts almost 30 Earth years!"},
-                 {name: "Uranus", yearLength: (365 * 84), astroImage: astro6, text1: "However, Uranus orbits the Sun much slower than Earth does!", text2: "A single year on Uranus is absurdly long - about 84 Earth years!"},
-                 {name: "Neptune", yearLength: (365 * 165), astroImage: astro7, text1: "However, Neptune orbits the Sun much slower than Earth does!", text2: "A single year on Neptune lasts an astounding 165 Earth years!"},
-                 {name: "Pluto", yearLength: (365 * 248), astroImage: astro8, text1: "However, Pluto orbits the Sun much slower than Earth does!", text2: "A single year on Pluto lasts a shocking 248 Earth years!"},
+                 {name: "Jupiter", yearLength: (365 * 11.86), astroImage: astro4, text1: "However, Jupiter orbits the Sun much slower than Earth does!", text2: "A single year on Jupiter lasts about 12 Earth years!"},
+                 {name: "Saturn", yearLength: (365 * 29.46), astroImage: astro5, text1: "However, Saturn orbits the Sun much slower than Earth does!", text2: "A single year on Saturn lasts almost 30 Earth years!"},
+                 {name: "Uranus", yearLength: (365 * 84.01), astroImage: astro6, text1: "However, Uranus orbits the Sun much slower than Earth does!", text2: "A single year on Uranus is absurdly long - about 84 Earth years!"},
+                 {name: "Neptune", yearLength: (365 * 164.79), astroImage: astro7, text1: "However, Neptune orbits the Sun much slower than Earth does!", text2: "A single year on Neptune lasts an astounding 165 Earth years!"},
+                 {name: "Pluto", yearLength: (365 * 248.59), astroImage: astro8, text1: "However, Pluto orbits the Sun much slower than Earth does!", text2: "A single year on Pluto lasts a shocking 248 Earth years!"},
                 ];
 
 export const Age: React.FC<IProps> = (props) => {
-  const earthAge = props.age ? Math.floor(props.age / 365) : 0;
+  const earthAge = props.age ? Math.floor(props.age / 365.25) : 0;
   let planetAge = 0;
   let planetYear = 0;
   let relationString = "";
@@ -35,7 +35,7 @@ export const Age: React.FC<IProps> = (props) => {
   if (props.age) {
     const planet = planets.find((p) => p.name === props.planet);
     if (planet) {
-      planetAge = Math.round(props.age / planet.yearLength);
+      planetAge = Math.floor(props.age / planet.yearLength);
       planetYear = Math.round(planet.yearLength);
       astro = planet.astroImage;
       relationString = `${planet.text1} `;
