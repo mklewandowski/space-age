@@ -1,6 +1,9 @@
 .age {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
   box-sizing: border-box;
   max-width: 1200px;
   padding: 16px;
@@ -12,13 +15,6 @@
   border: solid #FF539E 5px;
   border-radius: 15px;
   font-size: 1.25em;
-}
-.age .strip {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: nowrap;
 }
 .age .title {
   font-size: 1.5em;
