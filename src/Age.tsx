@@ -51,18 +51,16 @@ export const Age: React.FC<IProps> = (props) => {
   const message = earthAgeString + relationString + planetYearString + reactionString + planetAgeString;
   return (
     <div className="age">
-      <div className="strip">
-        <div>
-          <img height={200} src={astro} alt="astronaut"/>
-        </div>
-        { props.planet
-        ? <div className="content">
-            <div className="title">{props.planet}</div>
-            <div>{message}</div>
-          </div>
-        : <div className="content">Enter a birthday and choose a planet to see your planetary age...</div>
-        }
+      <div>
+        <img height={200} src={astro} alt="astronaut"/>
       </div>
+      { props.planet
+      ? <div className="content">
+          <div className="title">{props.planet}</div>
+          <div>{message}</div>
+        </div>
+      : <div className="content">Enter a birthday and choose a planet to see your planetary age...</div>
+      }
     </div>
   );
 };
