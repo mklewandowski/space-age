@@ -1,4 +1,6 @@
-Space Age is a single page application built using React (using function components and hooks), TypeScript, and vanilla CSS for styling. Space Age converts Earth birthdays to ages on different planets in our solar system (yes, Pluto is considered a planet in this application). Space Age is hosted on a GitHub Page at https://mklewandowski.github.io/space-age/
+Space Age is a single page application built using React (using function components and hooks), TypeScript, and vanilla CSS for styling. Space Age converts Earth birthdays to ages on different planets in our solar system (yes, Pluto is considered a planet in this application). Space Age is hosted on a GitHub Page at [https://mklewandowski.github.io/space-age/](https://mklewandowski.github.io/space-age/).
+
+![Name It '98 gameplay](https://github.com/mklewandowski/space-age/blob/master/space-age.jpg?raw=true)
 
 ## Run Locally
 - clone GitHub repo
